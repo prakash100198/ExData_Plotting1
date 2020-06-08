@@ -19,7 +19,6 @@ electricity$Time<-gsub("^2020-06-07 ","",electricity$Time)
 #filtering out the date we are going to work with i.e. 2007-02-01 and 2007-02-02
 library(plyr)
 library(dplyr)
-library(lattice)
 electricity_new<-filter(electricity,grepl("2007-02-01|2007-02-02",electricity$Date)==T)
 str(electricity_new)
 head(electricity_new)
